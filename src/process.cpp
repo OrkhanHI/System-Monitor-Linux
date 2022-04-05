@@ -20,8 +20,8 @@ float Process::CpuUtilization() const {
 }
 
 string Process::Command() { 
-  	string commandLine = LinuxParser::Command(pid_);
-  	commandLine.resize(40);
+    string commandLine = LinuxParser::Command(pid_);
+    commandLine.resize(40);
     return commandLine+"..."; 
 }
 
